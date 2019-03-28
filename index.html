@@ -2,8 +2,48 @@
 <html>
     <head>
         <title>mihovilm-cs52.me</title>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+
+        <style>
+        html, body {
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            background-color: #FF5252;
+            overflow: hidden;
+        }
+    
+        main {
+            position: relative;
+            min-height: 100%;
+        }
+
+        #center-block {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size:4vw;
+            color: white;
+        }
+        </style>
     </head>
+
     <body>
-        A Webpage
+        <main>
+            <div id="center-block">
+                <span id="typed-strings"></span>
+            </div>
+        </main>
+        
+
+    <script>
+        var typed = new Typed("#typed-strings", {
+        // Waits 1000ms after typing "First"
+        strings: ["Hi!^1200", "I'm Mihovil Mandic.^1200 Welcome to my CS52 website."],
+        typeSpeed: 40,
+        backSpeed: 50,
+        });
+    </script>
     </body>
 </html>
